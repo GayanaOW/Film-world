@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    label{
+        color: rgb(247, 231, 200);
+        padding: 2px;
+    }
+    legend{
+        color: #fbfcfd;
+    }
+
+    h2{
+        margin-top: -30%;
+        color: #b92121;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 4%;
+        /* border-width: 5px;
+        border-style: solid;
+        border-color: #f00; */
+
+    }
+    /* body{
+    padding-top: 40%;
+    background-color: #f1eded;
+} */
+    body{
+        padding-top: 40%;
+        background-color: #f1eded;
+        background-image: url("GayanaImages/530CC6CC-0034-44E9-944C-E991CE9DE9D8.JPEG.jpg");
+        background-size: cover;
+        padding-left: 3%;
+    }
+    textarea{
+        width: 695px;
+        height: 100px;
+        resize: none;
+    }
+    #fs1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 700px;
+        
+    }
+    #fs2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 700px;
+        float: left;
+    }
+    #fs3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 700px;
+    }
+    fieldset{
+        border-color: red;
+        /* margin-left: 3%; */
+        
+    }
+    #yes{
+        padding-left: 10px;
+    }
+    .naviBar{
+        position: fixed;
+    }
+    a{
+        text-decoration: none;
+    }
+    #botton input{
+        color: #fbfcfd;
+        padding: 10px 25px;
+        margin-right: 2%;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    img{
+        padding-left: 100px;
+        width: 200px;
+    }
+
+</style>
+
+<body>
+    <div class="naviBar">
+        <ul class="naviLinks">
+            <li class="navItems"><a href="MainPage.html"><b>Home</b></a></li>
+            <li class="navItems"><a href="shop.html"><b>Shop</b></a></li>
+            <li class="navItems"><a href="start.html"><b>Quiz</b></a></li>
+            <li class="navItems"><a href="CommentPage.html"><b>Comments</b></a></li>
+            <li class="navItems"><a href=""><b>Gallery</b></a></li>
+            <li class="navItems"><a href=""><b>Site Map</b></a></li>
+            <li class="navItems"><a href="StudentD.html"><b>About Us</b></a></li>       
+            <!-- <br><br><br> -->
+        </ul>
+        <div>
+            <h1><a class="pgName" id="pageName" contenteditable="true"><b>FILM WORLD</b></a></h1> 
+        </div>
+    
+    </div><br>
+
+    <h2>Comments</h2>
+    <br>
+    <form action="mailto:useremail@gmail.com" method="post" enctype="text/plain" name="form1" onsubmit="return emailValid()">
+        <fieldset id="fs1">
+            <legend><b>Rate</b></legend><br>
+            <label><b>How satisfied were you using our site ?  Rate it on a scale of 0 to 10.</b></label><br>
+            <label for="0">0</label>
+            <input type="radio" name="rate">
+            <label for="1">1</label>
+            <input type="radio" name="rate">
+            <label for="2">2</label>
+            <input type="radio" name="rate">
+            <label for="3">3</label>
+            <input type="radio" name="rate">
+            <label for="4">4</label>
+            <input type="radio" name="rate">
+            <label for="5">5</label>
+            <input type="radio" name="rate">
+            <label for="6">6</label>
+            <input type="radio" name="rate">
+            <label for="7">7</label>
+            <input type="radio" name="rate">
+            <label for="8">8</label>
+            <input type="radio" name="rate">
+            <label for="9">9</label>
+            <input type="radio" name="rate">
+            <label for="10">10</label>
+            <input type="radio" name="rate"><br>
+            <br>
+        </fieldset> 
+        <br><br>
+    
+        
+        <label><b>Did you find the movie you were looking for: </b></label >
+        <label for="yes" id="yes">Yes</label>
+        <input type="radio" name="yn" required>
+        <label for="no" id="yes">No</label>
+        <input type="radio" name="yn" required>
+        <br><br><br>
+
+
+        <fieldset id="fs2">
+            <legend><b>Comments</b></legend><br>
+            <label><b>Would you like to leave a comment?</b></label><br><br>
+            <textarea></textarea>
+
+        </fieldset>
+        <br><br>
+
+        <div>
+            <img src="GayanaImages/comment.jpg" alt="">
+            <img src="GayanaImages/movie-850 (2).png" alt="" height="95px">
+        </div>
+        <br><br>
+
+        <br><br>
+        <fieldset id="fs3">
+            <legend><b>Movie Suggestions</b></legend><br>
+            <label><b>Suggest movies that you would like us to add</b></label><br><br>
+            <textarea></textarea>
+        </fieldset>
+        <br><br>
+
+        <div>
+            <label for="email">Email address: </label>
+            <input type="email" id="email" name="email">
+        </div><br><br>
+
+        <div id="botton">
+            <a href="thankYou.html"><input id="sub" type="submit" name="submit" style="font-weight: bold;"><a>
+            <input id="reset" type="reset" name="reset" style="color: rgb(189, 4, 4); font-weight: bold;">
+        </div>
+        
+    </form>
+
+    <div class="scroll-container" style="color: aqua;">
+        <a href="#top">&#8686;</a>
+        <p>scroll to Top</p>
+    </div>
+
+    <div class="pgEditor" style="text-align: center;">
+        <a href="Gayanaeditor.html" style="color: #fff;">Page Editor</a>
+    </div>
+    
+</body>
+<script>
+
+function emailValid() {
+    
+    var x = document.form1.email.value;
+        if (x == ""){
+            alert("Please enter your email");
+            return false;
+
+        }else {
+            alert("Successful");
+            window.location.href="thankYou.html";
+            return true; 
+        }
+}
+
+function successMessage(){
+    window.location.href="thankYou.html";
+    //https://testbook.com/web-development/how-do-i-link-a-submit-button-to-another-webpage-using-html#:~:text=In%20HTML%2C%20linking%20submit%20buttons,property%20of%20the%20Anchor%20element.
+}
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(236, 18, 7);
+    background-image: url(background.jpg);
+}
+h2{
+    color: rgb(237, 203, 5);
+    text-align: left;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    padding-bottom: 8px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+    margin-left: 20px;
+}
+.image{
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
